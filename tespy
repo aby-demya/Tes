@@ -1,1 +1,12 @@
 
+import datetime
+
+# Meminta nama pengguna
+nama_pengguna = input("Masukkan nama Anda: ")
+
+# Mengambil tanggal saat ini
+tanggal_sekarang = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+# Menampilkan pesan menyapa
+pesan_menyapa = f"Halo, {nama_pengguna}! Selamat datang.\nSaat ini adalah {tanggal_sekarang}."
+print(pesan_menyapa)
